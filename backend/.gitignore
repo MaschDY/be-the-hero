@@ -1,0 +1,3 @@
+node_modules
+git config --global user.name "Leonardo C. da Paz"
+git config --global user.email leonardocovelodapaz@gmail.com
