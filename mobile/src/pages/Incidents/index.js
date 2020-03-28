@@ -5,9 +5,9 @@ import { View, FlatList, Image, Text, TouchableOpacity } from 'react-native';
 
 import api from '../../services/api';
 
-import styles from './styles';
-
 import logoImg from '../../assets/logo.png';
+
+import styles from './styles';
 
 export default function Incidents() {
     const [incidents, setIncidents] = useState([]);
