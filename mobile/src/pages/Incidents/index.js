@@ -5,9 +5,9 @@ import { View, FlatList, Image, Text, TouchableOpacity } from 'react-native';
 
 import api from '../../services/api';
 
-import logoImg from '../../assets/logo.png';
-
 import styles from './styles';
+
+import logoImg from '../../assets/logo.png';
 
 export default function Incidents() {
     const [incidents, setIncidents] = useState([]);
@@ -62,7 +62,7 @@ export default function Incidents() {
                 data={incidents}
                 style={styles.incidentsList}
                 keyExtractor={incident => String(incident.id)}
-                //showsVerticalScrollIndicator={false}
+                showsVerticalScrollIndicator={false}
                 onEndReached={loadIncidents}
                 onEndReachedThreshold={0.2}
                 renderItem={({ item: incident }) => (
